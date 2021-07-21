@@ -12,7 +12,7 @@ import (
 	helloworldpb "github.com/RenatoDeAquino/go-gtw/proto/helloworld"
 )
 
-type server struct{
+type server struct {
 	helloworldpb.UnimplementedGreeterServer
 }
 
@@ -21,7 +21,7 @@ func NewServer() *server {
 }
 
 func (s *server) SayHello(ctx context.Context, in *helloworldpb.HelloRequest) (*helloworldpb.HelloReply, error) {
-	return &helloworldpb.HelloReply{Message: in.Name + " world"}, nil
+	return &helloworldpb.HelloReply{Message: "seja bem vindo " + in.Name}, nil
 }
 
 func main() {
