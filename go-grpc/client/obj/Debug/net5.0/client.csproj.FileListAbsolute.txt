@@ -1,0 +1,16 @@
+/home/w3-as/Documents/github/go-gtw/go-grpc/client/bin/Debug/net5.0/client
+/home/w3-as/Documents/github/go-gtw/go-grpc/client/bin/Debug/net5.0/client.deps.json
+/home/w3-as/Documents/github/go-gtw/go-grpc/client/bin/Debug/net5.0/client.runtimeconfig.json
+/home/w3-as/Documents/github/go-gtw/go-grpc/client/bin/Debug/net5.0/client.runtimeconfig.dev.json
+/home/w3-as/Documents/github/go-gtw/go-grpc/client/bin/Debug/net5.0/client.dll
+/home/w3-as/Documents/github/go-gtw/go-grpc/client/bin/Debug/net5.0/ref/client.dll
+/home/w3-as/Documents/github/go-gtw/go-grpc/client/bin/Debug/net5.0/client.pdb
+/home/w3-as/Documents/github/go-gtw/go-grpc/client/obj/Debug/net5.0/client.csproj.AssemblyReference.cache
+/home/w3-as/Documents/github/go-gtw/go-grpc/client/obj/Debug/net5.0/client.GeneratedMSBuildEditorConfig.editorconfig
+/home/w3-as/Documents/github/go-gtw/go-grpc/client/obj/Debug/net5.0/client.AssemblyInfoInputs.cache
+/home/w3-as/Documents/github/go-gtw/go-grpc/client/obj/Debug/net5.0/client.AssemblyInfo.cs
+/home/w3-as/Documents/github/go-gtw/go-grpc/client/obj/Debug/net5.0/client.csproj.CoreCompileInputs.cache
+/home/w3-as/Documents/github/go-gtw/go-grpc/client/obj/Debug/net5.0/client.dll
+/home/w3-as/Documents/github/go-gtw/go-grpc/client/obj/Debug/net5.0/ref/client.dll
+/home/w3-as/Documents/github/go-gtw/go-grpc/client/obj/Debug/net5.0/client.pdb
+/home/w3-as/Documents/github/go-gtw/go-grpc/client/obj/Debug/net5.0/client.genruntimeconfig.cache
