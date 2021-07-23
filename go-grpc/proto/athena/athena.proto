@@ -10,13 +10,11 @@ service AccountServices {
 	 rpc GetProductAccount(AccountProduct) returns (BaseStatus){
     option (google.api.http) = {
           get: "/v1/athena/account"
-          body: "*"
       };
   };
 	 rpc GetClient(AccountProduct) returns (BaseStatus){
     option (google.api.http) = {
         get: "/v1/athena/client"
-        body: "*"
     };
   };
  };
