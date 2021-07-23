@@ -26,7 +26,7 @@ func (s *server) SayHello(ctx context.Context, in *helloworldpb.HelloRequest) (*
 
 func main() {
 	// Create a listener on TCP port
-	lis, err := net.Listen("tcp", ":8080")
+	lis, err := net.Listen("tcp", ":8085")
 	if err != nil {
 		log.Fatalln("Failed to listen:", err)
 	}
@@ -36,7 +36,7 @@ func main() {
 	// Attach the Greeter service to the server
 	helloworldpb.RegisterGreeterServer(s, &server{})
 	// Serve gRPC server
-	log.Println("Serving gRPC on 0.0.0.0:8080")
+	log.Println("Serving gRPC on 0.0.0.0:8085")
 	go func() {
 		log.Fatalln(s.Serve(lis))
 	}()
@@ -45,7 +45,7 @@ func main() {
 	// This is where the gRPC-Gateway proxies the requests
 	conn, err := grpc.DialContext(
 		context.Background(),
-		"0.0.0.0:8080",
+		"0.0.0.0:8085",
 		grpc.WithBlock(),
 		grpc.WithInsecure(),
 	)

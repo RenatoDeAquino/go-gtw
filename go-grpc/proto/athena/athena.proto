@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+option go_package = "example.com/go-grpc/proto/athena";
+
+package athena;
+
+import "google/api/annotations.proto";
+
+service AccountServices {
+	 rpc GetProductAccount(AccountProduct) returns (BaseStatus){
+    option (google.api.http) = {
+          get: "/v1/athena/account"
+          body: "*"
+      };
+  };
+	 rpc GetClient(AccountProduct) returns (BaseStatus){
+    option (google.api.http) = {
+        get: "/v1/athena/client"
+        body: "*"
+    };
+  };
+ };
+
+ message AccountProduct {
+	int64 Banco = 1;
+	int64 Produto = 2;
+	int64 Agencia = 3;
+	int64 Conta = 4;
+	string CPF = 5;
+ }
+
+ message BaseStatus {
+	enum EnumStatus {
+		SUCESSO = 0;
+		NEGOCIO = 1;
+		SISTEMA = 2;
+	}
+	EnumStatus Status = 1;
+	string Mensagem = 2;
+	string DataContabil = 3;
+ }
